@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name":"Vacation Pricing Chrome Extension",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "Location&Date.html",
+    "default_icon": "VPCE.png"
+  }
+}
