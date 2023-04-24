@@ -1,10 +1,15 @@
 {
-  "manifest_version": 3,
-  "name":"Vacation Pricing Chrome Extension",
-  "description": "Base Level Extension",
+  "name": "Vacation Pricing",
   "version": "1.0",
-  "action": {
-    "default_popup": "Location&Date.html",
-    "default_icon": "VPCE.png"
-  }
+  "description": "Get the least expensive car rental and hotel options for a given destination and travel dates",
+  "manifest_version": 2,
+  "permissions": [
+    "https://www.flights.google.com/*",
+    "https://www.expedia.com/*",
+    "https://www.hotels.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.flights.google.com/*"],
+    "js": ["content.js"]
+  }]
 }
